@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="head">
+        <h1>
+            Memory Game
+        </h1>
+    </div>
+    <div class="game-container">
+        <div class="game-board" id="gameBoard"></div>
+        <div class="score-panel">
+            <p>Moves: <span id="moveCounter">0</span></p>
+            <p>Time: <span id="timer">00:00</span></p>
+            <button id="startButton">Start</button>
+            <button id="stopbutton">Stop</button>
+            <button id="resetbutton">Reset</button>
+        </div>
+    </div>
+
+    <div class="congrats-message" id="congratsMessage">
+        <p>Congratulations! You matched all cards!</p>
+        <canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+    </div>
+    <section class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+    </section>
+    <div id="feedbackMessage" class="feedback-message"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
